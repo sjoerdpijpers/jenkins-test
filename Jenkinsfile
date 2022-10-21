@@ -6,12 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Hello Sjoerd') {
-            steps {
-                echo 'Hello Sjoerd'
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
