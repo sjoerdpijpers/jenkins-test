@@ -17,5 +17,8 @@ pipeline {
                 echo "WORKSPACE: ${env.WORKSPACE}"
             }
         }
+        stage('second-stage'){
+            echo "hello second stage"
+        }
     }
 }
