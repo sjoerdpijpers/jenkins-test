@@ -18,7 +18,9 @@ pipeline {
             }
         }
         stage('second-stage'){
-            echo "hello second stage"
+            steps {
+                echo "hello second stage"
+            }
         }
     }
 }
